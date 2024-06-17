@@ -370,7 +370,7 @@ hr {
 .footer-left, .footer-right {
     flex-basis: 45%;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 300px;
 }
 .footer-right {
     text-align: right;
