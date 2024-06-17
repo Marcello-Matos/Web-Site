@@ -1,0 +1,134 @@
+/* Estilos para a seção de formulário e lista de depoimentos */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #f2f2f2b8), url();
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+}
+
+.testimonial-section {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 80%; /* Define a largura das caixas de entrada */
+    max-width: 500px; /* Define uma largura máxima */
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Estilos para o botão */
+button[type="submit"] {
+    display: block;
+    text-align: center;
+    height: auto; /* Ajusta a altura automaticamente */
+    width: auto; /* Ajusta a largura automaticamente */
+    line-height: normal; /* Linha normal */
+    border: 1px solid #0FB2F2;
+    border-radius: 10px;
+    margin: 20px auto; /* Margem para centralizar */
+    color: #0FB2F2;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 20px; /* Ajuste do padding */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+button[type="submit"]:hover {
+    background: #0FB2F2;
+    color: #fff;
+    transform: translateY(-7px);
+}
+
+.testimonial-list {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-list ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.testimonial-list li {
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-section {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.testimonial-list {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.center {
+    text-align: center;
+}
+
+.centralizar {
+    text-align: center;
+}
+
+@media screen and (max-width: 770px){
+    button[type="submit"] {
+        flex-basis: 100%;
+        font-size: 13px;
+    }
+    .footer-img {
+        top: 25%;
+    }
+}
+.testimonial-list {
+    -webkit-background-clip: text;
+    background-clip: text; 
+    transition: transform 0.5s ease;
+    font-size: 20px;
+    font-style: italic;
+}
+
+.testimonial-list:hover {
+    transform: translateY(-7px);
+}
+
+@media screen and (max-width: 770px) {
+    .testimonial-list {
+        flex-basis: 100%;
+    }
+}
+
+
+
