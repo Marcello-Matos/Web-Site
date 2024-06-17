@@ -433,3 +433,7 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 	speedAsDuration: true
 });
 
+.whats {
+    width: 200px;
+    height: 200px;
+}

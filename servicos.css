@@ -7,7 +7,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.5), #f2f2f2b8), url();
     background-size: cover;
     background-position: center;
-    height: 110vh;
+    height: 200vh;
 }
 .logo {
     width: 140px;
@@ -103,6 +103,17 @@ nav ul li a {
         
     }
     .banner-btn a {
+        display:block;
+        margin: 20px auto;
+    }       
+}
+
+@media screen and (max-width: 770px) {
+    .small-img {
+        font-size: 44px;
+        
+    }
+    .small-img {
         display:block;
         margin: 20px auto;
     }       
