@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Magestic x Coded</title>
+    <link rel="stylesheet" href="servicos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <style>
+        .whats {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            z-index: 9999;
+        }
+        
+        .small-img {
+            max-width: 100px; /* Ajuste o valor conforme necessário */
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner Section -->
+    <section id="banner">
+        <img src="./imagem/logo.svg" class="logo" alt="Logo">
+        <div class="banner-text">
+            <h1>Somos profissionais em Desenvolvimento</h1>
+            <br><br><br><br><br>
+            <br>
+            <p>Mobile: <img src="./imagem/contact-information.png" alt="Mobile" class="small-img"></p>
+            <br>
+            <p>Loja Virtual: <img src="./imagem/e-commerce.png" alt="Loja Virtual" class="small-img"></p>
+            <br>
+            <p>web Site: <img src="./imagem/web.png" alt="Web Site" class="small-img"></p>
+            <br>
+            <p>Landing Page: <img src="./imagem/landing-page.png" alt="Landing Page" class="small-img"></p>
+        </div>
+    </section>
+
+    <!-- Side Navigation -->
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="sobre nós.html">Sobre nós</a></li>
+                <li><a href="serviços.html">Serviços</a></li>
+                <li><a href="depoimentos.html">Depoimentos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="./imagem/menu.png" id="menu" alt="Menu">
+    </div>
+
+    <!-- Serviços Section -->
+    <section id="service">
+        <div class="title-text">
+            <p>Serviços</p>
+            <h1>O que oferecemos</h1>
+        </div>
+        <div class="service-box">
+            <div class="single-service">
+                <img src="./imagem/pic-1.jpg" alt="Serviço 1">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Desenvolvimento Web</h3>
+                    <hr>
+                    <p>Tecnologias modernas como HTML5, CSS3, JavaScript, e frameworks como React, Angular, Vue.js.
+Integração com APIs e sistemas externos.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./imagem/pic-2.jpg" alt="Serviço 2">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Desenvolvimento de E-commerce</h3>
+                    <hr>
+                    <p>Construção de plataformas de comércio eletrônico escaláveis e seguras.
+Integração com gateways de pagamento, sistemas de gestão de estoque e CRM.
+Design responsivo e otimização para SEO.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./imagem/pic-3.jpg" alt="Serviço 3">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Manutenção e Suporte de Software</h3>
+                    <hr>
+                    <p>Monitoramento proativo e manutenção preventiva de aplicações.
+Atendimento rápido a incidentes e correções de bugs.
+Atualizações de segurança e melhoria contínua da performance.</p>
+                </div>
+            </div>
+            <div class="single-service">
+                <img src="./imagem/pic-4.jpg" alt="Serviço 4">
+                <div class="overlay"></div>
+                <div class="service-desc">
+                    <h3>Marketing em Redes Sociais</h3>
+                    <hr>
+                    <p>Estratégias personalizadas de marketing digital para Google, Instagram e Facebook.
+Criação (Google Ads, Facebook Ads, Instagram Ads) para aumentar a visibilidade e atrair mais clientes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="social-links">
+        <i class="fa fa-brands fa-instagram"></i>
+        <i class="fa fa-brands fa-facebook-f"></i>
+        <i class="fa fa-brands fa-twitter"></i>
+        <i class="fa fa-brands fa-youtube"></i>
+        <p>Copyright @Marcello Matos</p>
+    </div>
+
+    <!-- WhatsApp Button -->
+    <div class="whats">
+    <a href="https://api.whatsapp.com/send?phone=5511938028926&text=Olá,%20deixe%20sua%20mensagem">
+            <img src="./imagem/whatsapp.png" width="50" alt="WhatsApp" />
+        </a>
+    </div>
+
+    <!-- Custom JS for Menu Toggle -->
+    <script>
+        var menuBtn = document.getElementById("menuBtn");
+        var sideNav = document.getElementById("sideNav");
+        var menu = document.getElementById("menu");
+
+        sideNav.style.right = "-250px";
+
+        menuBtn.onclick = function() {
+            if (sideNav.style.right == "-250px") {
+                sideNav.style.right = "0";
+                menu.src = "./imagem/close.png";
+            } else {
+                sideNav.style.right = "-250px";
+                menu.src = "./imagem/menu.png";
+            }
+        }
+    </script>
+</body>
+</html>

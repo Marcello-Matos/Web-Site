@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Depoimentos</title>
+</head>
+<body>
+    <h1>Depoimentos</h1>
+    <div id="testimonials"></div>
+
+    <script>
+        fetch('/testimonials')
+            .then(response => response.json())
+            .then(testimonials => {
+                const testimonialsDiv = document.getElementById('testimonials');
+                testimonials.forEach(testimonial => {
+                    const testimonialDiv = document.createElement('div');
+                    testimonialDiv.innerHTML = `
+                        <h3>${testimonial.name}</h3>
+                        <p>${testimonial.message}</p>
+                        <small>${new Date(testimonial.date).toLocaleString()}</small>
+                    `;
+                    testimonialsDiv.appendChild(testimonialDiv);
+                });
+            });
+    </script>
+</body>
+</html>
