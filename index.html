@@ -16,6 +16,10 @@
             right: 10px;
             z-index: 9999;
         }
+        .whats img {
+            width: 60px;
+            height: 60px;
+        }
     </style>
 </head>
 <body>
@@ -29,7 +33,6 @@
             <br><br><br>
             <h2>Aumente as suas vendas com web sites e loja virtual inteligentes</h2>
             <h2>Pode parecer magia, mas é a internet operando para aumentar o faturamento da sua empresa.</h2>
-           
         </div>
     </section>
 
@@ -49,20 +52,18 @@
         <img src="./imagem/menu.png" id="menu" alt="Menu">
     </div>
 
-    
-        <div class="social-links">
-            <i class="fa fa-brands fa-instagram"></i>
-            <i class="fa fa-brands fa-facebook-f"></i>
-            <i class="fa fa-brands fa-twitter"></i>
-            <i class="fa fa-brands fa-youtube"></i>
-            <p>Copyright @Marcello Matos</p>
-        </div>
-    </section>
+    <div class="social-links">
+        <i class="fa fa-brands fa-instagram"></i>
+        <i class="fa fa-brands fa-facebook-f"></i>
+        <i class="fa fa-brands fa-twitter"></i>
+        <i class="fa fa-brands fa-youtube"></i>
+        <p>Copyright @Marcello Matos</p>
+    </div>
 
-    <!-- WhatsApp Button -->
-    <div class="whats">
+   <!-- WhatsApp Button -->
+   <div class="whats">
     <a href="https://api.whatsapp.com/send?phone=5511938028926&text=Olá,%20deixe%20sua%20mensagem">
-            <img class="whats" src="./imagem/whatsapp.svg" width="50" alt="WhatsApp" />
+            <img src="./imagem/whatsapp.svg" width="80" alt="WhatsApp" />
             
         </a>
     </div>
@@ -84,8 +85,11 @@
                 menu.src = "./imagem/menu.png";
             }
         }
+
+        var scroll = new SmoothScroll('a[href*="#"]', {
+            speed: 1000,
+            speedAsDuration: true
+        });
     </script>
 </body>
 </html>
-
-
