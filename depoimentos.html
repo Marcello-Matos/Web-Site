@@ -131,7 +131,33 @@
             localStorage.setItem('testimonials', JSON.stringify(testimonials));
             loadTestimonials();
             this.reset();
+            saveMessage();
+            //google sheets
+            /*var sheet = SpreadsheetApp.openById('1WFJDLxzaUlIgv23ZvSYabtkyI7hJy6rqw6enIxrFq48').getActiveSheet();
+            var data = JSON.parse(e.postData.contents);
+            sheet.appendRow([data.message]);
+            ContentService.createTextOutput('Message saved successfully');*/
         });
+
+
+        async function saveMessage() {
+            const message = "testando api";
+
+            const response = await fetch('TODOgerarscript', {
+                method: 'POST',
+                mode: 'cors',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ message })
+            });
+
+            if (response.ok) {
+                alert('Message saved successfully');
+            } else {
+                alert('Error saving message');
+            }
+        }
     </script>
 </body>
 </html>
